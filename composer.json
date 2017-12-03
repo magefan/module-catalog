@@ -2,8 +2,6 @@
     "name": "magefan/module-catalog",
     "description": "",
     "license": "OSL-3.0",
-    "minimum-stability": "dev",
-    "require": {},
     "autoload": {
         "files": [
             "registration.php"
