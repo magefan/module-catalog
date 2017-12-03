@@ -1,1 +1,6 @@
-Allow to use {{block class="xxxx" template="xxxx"}} products & categories descriptions and other WYSIWYG attributes.
+## Installation
+```
+composer require magefan/module-catalog
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+```
