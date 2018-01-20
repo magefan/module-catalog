@@ -11,7 +11,7 @@ composer require magefan/module-catalog
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 ```
-## Free Magento 2 Extension by Magefan
+## Free Magento 2 Extensions by Magefan
 
 1. [Magento 2 Blog Extension](https://magefan.com/magento2-blog-extension)
 2. [Magento 2 Login As Customer Extension](https://magefan.com/login-as-customer-magento-2-extension)
