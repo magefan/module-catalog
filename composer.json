@@ -1,7 +1,15 @@
 {
     "name": "magefan/module-catalog",
-    "description": "",
-    "license": "OSL-3.0",
+    "description": "Fixes for magento issues in catalog",
+    "require": {
+        "php": "~5.6.5 || >=7.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "autoload": {
         "files": [
             "registration.php"
