@@ -9,4 +9,7 @@
 	<type name="Magento\Catalog\Model\Template\Filter">
 		<plugin disabled="false" name="Magefan_Catalog_Plugin_Magento_Catalog_Model_Template_Filter" sortOrder="10" type="Magefan\Catalog\Plugin\Magento\Catalog\Model\Template\Filter"/>
 	</type>
+	<type name="Magento\Catalog\Block\Product\ListProduct">
+		<plugin disabled="false" name="Magefan_Catalog_Plugin_Magento_Catalog_Block_Product_ListProduct" sortOrder="10" type="Magefan\Catalog\Plugin\Magento\Catalog\Block\Product\ListProduct"/>
+	</type>
 </config>
