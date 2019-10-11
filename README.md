@@ -15,7 +15,7 @@ php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 ```
 ## Other Magento 2 Extensions by Magefan
-* [Magento 2 Blog Extension](https://magefan.com/magento2-blog-extension)
+  * [Magento 2 Blog Extension](https://magefan.com/magento2-blog-extension)
   * [Magento 2 Blog Plus Extension](https://magefan.com/magento2-blog-extension/pricing)
   * [Magento 2 Blog Extra Extension](https://magefan.com/magento2-blog-extension/pricing)
   * [Magento 2 Login As Customer Extension](https://magefan.com/login-as-customer-magento-2-extension)
@@ -30,3 +30,6 @@ php bin/magento setup:di:compile
   * [Magento 2 Lazy Load Extension](https://magefan.com/magento-2-image-lazy-load-extension)
   * [Magento 2 Rocket JavaScript Extension](https://magefan.com/rocket-javascript-deferred-javascript)
   * [Magento 2 CLI Extension](https://magefan.com/magento2-cli-extension)
+  * [Magento Twitter Cards Extension](https://magefan.com/magento-2-twitter-cards-extension)
+  * [Magento 2 Mautic Integration Extension](https://magefan.com/magento-2-mautic-extension)
+  * [Magento 2 Alternate Hreflang Extension](https://magefan.com/magento2-alternate-hreflang-extension)
