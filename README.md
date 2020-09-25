@@ -5,7 +5,7 @@
 
 This extension allows you to fix next Magento 2 issues in Catalog
 
-1. Problems with breadcrumbs [#7967](https://github.com/magento/magento2/issues/7967)
+1. Problems with breadcrumbs [#7967](https://github.com/magento/magento2/issues/7967), please also add additional layout fix from here https://github.com/magefan/module-catalog/issues/2#issuecomment-698930898
 2. Block tag {{block ...}} doesnt work in WYSIWYG Editor on Product Detail Page. [#10364](https://github.com/magento/magento2/issues/10364), [#5168](https://github.com/magento/magento2/issues/5168)
 
 ## Installation
