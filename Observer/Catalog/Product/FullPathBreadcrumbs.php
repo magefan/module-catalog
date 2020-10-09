@@ -8,16 +8,35 @@ namespace Magefan\Catalog\Observer\Catalog\Product;
 
 class FullPathBreadcrumbs implements \Magento\Framework\Event\ObserverInterface
 {
+    /**
+     * @var \Magento\Framework\Registry
+     */
     protected $registry;
 
+    /**
+     * @var \Magento\Catalog\Api\CategoryRepositoryInterface
+     */
     protected $categoryRepository;
 
+    /**
+     * @var \Magento\Store\Model\StoreManagerInterface
+     */
+    private $storeManager; 
+
+    /**
+     * @param \Magento\Framework\Registry $registry
+     * @param \Magento\Catalog\Api\CategoryRepositoryInterface $categoryRepository
+     * @param \Magento\Store\Model\StoreManagerInterface $StoreManagerInterface
+     */
     public function __construct(
         \Magento\Framework\Registry $registry,
-        \Magento\Catalog\Api\CategoryRepositoryInterface $categoryRepository
+        \Magento\Catalog\Api\CategoryRepositoryInterface $categoryRepository,
+        \Magento\Store\Model\StoreManagerInterface $storeManager = null
     ) {
         $this->registry=$registry;
         $this->categoryRepository = $categoryRepository;
+        $this->storeManager = $storeManager ?: \Magento\Framework\App\ObjectManager::getInstance()
+            ->get(\Magento\Store\Model\StoreManagerInterface::class);
     }
 
     /**
@@ -34,11 +53,16 @@ class FullPathBreadcrumbs implements \Magento\Framework\Event\ObserverInterface
             $categories = $product->getAvailableInCategories();
             $productCategory = null;
             $level = -1;
+            $rootCategoryId = $this->storeManager->getStore()->getRootCategoryId();
+
             if ($categories) {
                 foreach ($categories as $categoryId) {
                     try {
-                        $category = $categ = $this->categoryRepository->get($categoryId);
-                        if ($category->getLevel() > $level) {
+                        $category = $this->categoryRepository->get($categoryId);
+                        if ($category->getIsActive()
+                            && $category->getLevel() > $level
+                            && in_array($rootCategoryId, $category->getPathIds())
+                        ) {
                             $level = $category->getLevel();
                             $productCategory = $category;
                         }
