@@ -15,7 +15,7 @@ class ListProduct
     /**
      *  Max. dentities count
      */
-    const MAX_COUNT = 400;
+    const MAX_COUNT = 100;
 
     /**
      * Slice identities.
