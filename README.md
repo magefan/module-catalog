@@ -3,6 +3,9 @@
 [![Total Downloads](https://poser.pugx.org/magefan/module-catalog/downloads)](https://packagist.org/packages/magefan/module-catalog)
 [![Latest Stable Version](https://poser.pugx.org/magefan/module-catalog/v/stable)](https://packagist.org/packages/magefan/module-catalog)
 
+<img width="150" height="100" src="https://magefan.com/media/wysiwyg/made_in_ukraine.jpg">
+
+
 This extension allows you to fix next Magento 2 issues in Catalog
 
 1. Problems with breadcrumbs [#7967](https://github.com/magento/magento2/issues/7967), please also add additional layout fix from here https://github.com/magefan/module-catalog/issues/2#issuecomment-698930898
